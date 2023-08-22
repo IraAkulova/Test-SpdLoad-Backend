@@ -5,7 +5,7 @@ const { validateBody } = require("../decorators");
 const authSchema = require("../schemas/authSchema");
 const verifyEmailSchema = require("../schemas/authSchema");
 const auth = require("../middlewares/auth");
-const { isValidId, upload } = require('../middlewares');
+const { upload } = require('../middlewares');
 
 const { register, verifyEmail, resendVerifyEmail, login, logout, getCurrent, updateAvatar } = require("../controllers/auth");
 
